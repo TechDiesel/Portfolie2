@@ -1,11 +1,6 @@
 
-//import java.util.ArrayList;
-import java.util.Arrays;
-
 public class App {
-    // Forelæser anbefaler at bruge AdjacencyListGraph, til at lave
-    // minimumSpanningTree, da man kan sortere Vertices på baggrund af distances,
-    // ved bruge af en queue
+    
     public static void main(String[] args) {
 
         AdjGraph adjgraph = new AdjGraph(); // man behøver ikke at parse noget til denne, altså vi behøves ikke at
@@ -44,11 +39,11 @@ public class App {
         adjgraph.newEdge(Mom, Jeb, 500);
         adjgraph.newEdge(Mom, Sal, 2000);
 
-       
-        adjgraph.calcTEUStock(); //Calculates the amount of stock for all ports
-       adjgraph.printTEU(); // Prints a list of all ports, and their initial amount of stock
-       adjgraph.reversingFlowCost(); //calculates and prints the cost of reversing the flow
-       adjgraph.cheapestFlow(); //calculates and prints the price of the flow, using the minimum cashflow approach.
-      
+        adjgraph.calcTEUStock(); // Calculates the amount of stock for all ports
+        adjgraph.printTEU(); // Prints a list of all ports, and their initial amount of stock
+        adjgraph.reversingFlowCost(); // calculates and prints the cost of reversing the flow
+        adjgraph.cheapestFlow(); // calculates and prints the price of the flow, using the minimum cashflow
+                                 // approach.
+
     }
 }

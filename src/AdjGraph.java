@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class AdjGraph { //Defines the AdjancencyGraph class
 
-    private ArrayList<Vertex> vertices; //ArrayList which containers all our vertices in our AdjencencyGraph
+    private ArrayList<Vertex> vertices; //ArrayList which contains all our vertices in our AdjencencyGraph
     private int pricePerUnit = 100;
 
     private int priceOfReversing; //int variable to store price of Reversing flow. 
@@ -79,7 +79,7 @@ public class AdjGraph { //Defines the AdjancencyGraph class
         ArrayList<Vertex> TEUplus = new ArrayList<>(); // used to store vertices with TEU surplus
         ArrayList<Vertex> TEUminus = new ArrayList<>(); // used to store vertices with TEU deficit
       
-       Vertex currentvertex; //Local temporary vertex
+        Vertex currentvertex; //Local temporary vertex
      
 
         //For loop that adds vertices to correct list, either surplus or deficit 
@@ -114,7 +114,7 @@ public class AdjGraph { //Defines the AdjancencyGraph class
             System.out.println(TEUplusTemp + " in stock: " + tempP);
             System.out.println(TEUminusTemp + " in stock: "  + -tempM);
             
-            System.out.println(" ");
+            System.out.println();
 
             System.out.println("Transfering " + findMinimum + " TEU from: " + TEUplusTemp + " to: " + TEUminusTemp);
             priceOfMinimizing += findMinimum*pricePerUnit; //Total cost is updated
